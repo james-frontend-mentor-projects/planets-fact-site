@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+
+@each $color, $shade in $colors {
+  @each $prop, $value in $shade {
+    .text-#{$color}-#{$prop} {
+      color: var(--clr-#{$color}-#{$prop}) !important;
+    }
+
+    .bg-#{$color}-#{$prop} {
+      background-color: var(--clr-#{$color}-#{$prop}) !important;
+    }
+
+    .active > .#{$color}-#{$prop} {
+      border-bottom: 4px solid var(--clr-#{$color}-#{$prop});
+
+      @media (min-width: $tablet-breakpoint) {
+        border-bottom: none;
+        background-color: var(--clr-#{$color}-#{$prop});
+      }
+    }
+  }
+}

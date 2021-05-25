@@ -1,0 +1,29 @@
+$colors: (
+  planet: (
+    mercury: #def4fc,
+    venus: #f7cc7f,
+    earth: #545bfe,
+    mars: #ff6a45,
+    jupiter: #ecad7a,
+    saturn: #fccb6b,
+    uranus: #65f0d5,
+    neptune: #497efa,
+  ),
+  tab: (
+    mercury: #419ebb,
+    venus: #eda249,
+    earth: #6d2ed5,
+    mars: #d14c32,
+    jupiter: #d83a34,
+    saturn: #cd5120,
+    uranus: #1ec1a2,
+    neptune: #2d68f0,
+  ),
+  primary: (
+    white: rgba(#ffffff, 1),
+    light: rgba(#ffffff, 0.5),
+    regular: rgba(#ffffff, 0.25),
+    dark: rgba(#ffffff, 0.2),
+    hover: rgba(#d8d8d8, 0.2),
+  ),
+);

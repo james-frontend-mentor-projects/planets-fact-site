@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+:root {
+  @each $color, $shade in $colors {
+    @each $prop, $value in $shade {
+      --clr-#{$color}-#{$prop}: #{$value};
+    }
+  }
+
+  --clr-background: #070724;
+  // --clr-background: #4343c5;
+}

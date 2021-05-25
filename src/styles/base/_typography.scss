@@ -1,0 +1,12 @@
+@mixin font-antonio {
+  font-family: "Antonio", sans-serif;
+  font-weight: 500;
+}
+@mixin font-spartan-bold {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+}
+@mixin font-spartan-regular {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+}
