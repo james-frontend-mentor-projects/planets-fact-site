@@ -158,6 +158,7 @@ export const Planet = () => {
             </a>
           </section>
           <section className="stats-info">
+            <h2 className="sr-only">Stats about {planetName}</h2>
             <InfoSection heading="Rotation time" value={planet.rotation} />
             <InfoSection heading="Revolution time" value={planet.revolution} />
             <InfoSection heading="Radius" value={planet.radius} />
