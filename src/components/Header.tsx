@@ -60,7 +60,11 @@ export const Header = () => {
   const isMobile = useMediaQuery(mobileMediaQuery);
 
   const toggleOpen = () => {
-    setOpen(!open);
+    if (isMobile) {
+      setOpen(!open);
+    } else {
+      setOpen(false);
+    }
   };
 
   return (
