@@ -19,7 +19,8 @@
       }
     }
 
-    .nav-#{$color}-#{$prop} {
+    // Planet navigation in the header - not to be confused with sub-page navigation in the main
+    header .nav-#{$color}-#{$prop} {
       @media (min-width: $tablet-breakpoint) {
         border-top: 4px solid transparent;
 
