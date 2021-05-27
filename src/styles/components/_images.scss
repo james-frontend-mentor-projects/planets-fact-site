@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+.planet-image-container {
+  grid-area: image;
+  width: 90vw;
+  height: 19rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @media (min-width: $tablet-breakpoint) {
+    width: 50vw;
+  }
+
+  img {
+    max-width: unset;
+    transform: scale(0.4);
+
+    @media (min-width: $desktop-breakpoint) {
+      transform: scale(0.8);
+    }
+  }
+
+  .geology {
+    position: absolute;
+    bottom: -40%;
+    transform: scale(0.3);
+  }
+}

@@ -1,0 +1,38 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+
+button {
+  cursor: pointer;
+}
+
+button[class*="nav-tab"] {
+  padding: 1.25rem;
+  letter-spacing: 2px;
+  @include font-spartan-bold;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  background: none;
+  border: none;
+
+  @media (min-width: $tablet-breakpoint) {
+    @include font-spartan-regular;
+    width: 100%;
+    border: 1px solid var(--clr-primary-dark);
+    padding: 0.5rem;
+    text-align: left;
+
+    .index {
+      color: var(--clr-primary-light);
+    }
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 0.75rem;
+    padding: 0;
+
+    .index {
+      margin: 0.75rem 1.5rem;
+      display: inline-block;
+    }
+  }
+}

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { Loader } from "./components/Loader";
 import { NotFound } from "./components/NotFound";
-import { Planet } from "./components/Planet";
+import { Planet } from "./components/planet/Planet";
 import PlanetsContext from "./contexts/planetsContext";
 import { planetNames } from "./utils";
 
@@ -15,7 +15,7 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact>
-          <Redirect to="/mercury" />
+          <Redirect to="/earth" />
         </Route>
         <Route path={`/:planetName(${planetNames.join("|")})`} exact children={<Planet />} />
         <Route path="/:param" children={<NotFound />} />

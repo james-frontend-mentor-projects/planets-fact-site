@@ -1,6 +1,6 @@
 import { Redirect, useParams } from "react-router";
 import { planetNames } from "../utils";
-import { Header } from "./Header";
+import { Header } from "./header/Header";
 
 interface Params {
   param: string;
@@ -14,7 +14,11 @@ export const NotFound = () => {
   return (
     <>
       <Header />
-      <p>Well, that isn't a real planet...</p>
+      <p style={{ textAlign: "center", marginTop: "5rem" }}>
+        Well, that isn't a real planet...
+        <br />
+        At least, not one in the Solar System...
+      </p>
     </>
   );
 };

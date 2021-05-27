@@ -1,4 +1,12 @@
 body {
   margin: 0;
   font-family: "Spartan", sans-serif;
+  background-color: var(--clr-background);
+  color: var(--clr-primary-white);
+}
+
+body,
+#root,
+.loader-container {
+  min-height: 100vh;
 }

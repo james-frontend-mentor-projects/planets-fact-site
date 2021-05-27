@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-interface SectionDescription {
+export interface SectionDescription {
   content: string;
   source: string;
 }
 
-interface Planet {
+export interface Planet {
   name: string;
   overview: SectionDescription;
   structure: SectionDescription;

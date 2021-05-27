@@ -10,12 +10,23 @@
       background-color: var(--clr-#{$color}-#{$prop}) !important;
     }
 
-    .active > .#{$color}-#{$prop} {
+    .active > .nav-#{$color}-#{$prop} {
       border-bottom: 4px solid var(--clr-#{$color}-#{$prop});
 
       @media (min-width: $tablet-breakpoint) {
         border-bottom: none;
         background-color: var(--clr-#{$color}-#{$prop});
+      }
+    }
+
+    .nav-#{$color}-#{$prop} {
+      @media (min-width: $tablet-breakpoint) {
+        border-top: 4px solid transparent;
+
+        &:hover,
+        &:focus {
+          border-top: 4px solid var(--clr-#{$color}-#{$prop});
+        }
       }
     }
   }

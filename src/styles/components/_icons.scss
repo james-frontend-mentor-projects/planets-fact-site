@@ -1,0 +1,24 @@
+.circle {
+  border-radius: 50%;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+a[class*="nav-tab"] {
+  position: relative;
+
+  .chevron {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  padding: 0;
+  display: grid;
+  place-items: center;
+}
