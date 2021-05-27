@@ -17,6 +17,8 @@ header {
 
   @media (min-width: $desktop-breakpoint) {
     flex-direction: row;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   h1 {
