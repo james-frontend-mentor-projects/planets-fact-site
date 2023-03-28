@@ -11,6 +11,7 @@
 
   @media (min-width: $tablet-breakpoint) {
     width: 50vw;
+    z-index: -1;
   }
 
   img {
